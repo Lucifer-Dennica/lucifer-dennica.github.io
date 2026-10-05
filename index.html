@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+<title>Денис — Android-разработчик и Telegram-боты</title>
+<meta name="description" content="Разработка Android-приложений на Kotlin и Telegram-ботов на Python. Публикация в RuStore под ключ. Скачать APK и связаться напрямую.">
+<meta name="keywords" content="android разработчик, telegram бот, kotlin, jetpack compose, python, rustore, разработка приложений, автоматизация">
+
+<!-- Подтверждение прав в Яндекс.Вебмастере -->
+<meta name="yandex-verification" content="f830a8790a39e8c9" />
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232196F3'/><text x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>Д</text></svg>">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ==================== ШАПКА ==================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="index.html">Главная</a></li>
+        <li><a class="nav__link" href="services.html">Услуги</a></li>
+        <li><a class="nav__link" href="apps.html">Приложения</a></li>
+        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <button class="btn btn--primary btn--sm nav__cta js-contact">Связаться</button>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__badge reveal">
+        <span class="dot"></span>
+        Открыт для новых проектов
+      </div>
+
+      <h1 class="hero__title reveal" style="transition-delay:.06s">
+        Разрабатываю <span class="text-accent">Android‑приложения</span><br>
+        и Telegram‑ботов
+      </h1>
+
+      <p class="hero__subtitle reveal" style="transition-delay:.12s">
+        Пишу мобильные приложения на Kotlin и Jetpack Compose, собираю ботов на Python
+        и автоматизирую рутину. Довожу проекты до релиза в RuStore — от идеи до публикации.
+      </p>
+
+      <div class="hero__actions reveal" style="transition-delay:.18s">
+        <a href="apps.html" class="btn btn--light">
+          Смотреть приложения
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button class="btn btn--ghost js-contact">Связаться</button>
+      </div>
+
+      <div class="hero__stats reveal" style="transition-delay:.24s">
+        <div class="stat">
+          <div class="stat__value">2</div>
+          <div class="stat__label">приложения в RuStore</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">Kotlin + Compose</div>
+          <div class="stat__label">основной стек</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">GitHub Actions</div>
+          <div class="stat__label">сборка и релизы</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== УСЛУГИ ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow">Услуги</span>
+        <h2 class="section-title">Чем я могу помочь</h2>
+        <p class="section-sub">Беру задачи от небольшого скрипта до приложения, которое живёт в магазине приложений.</p>
+      </div>
+
+      <div class="bento">
+
+        <a href="services.html#bots" class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+          </div>
+          <h3 class="card__title">Telegram‑боты</h3>
+          <p class="card__text">Боты для магазинов, подписок, уведомлений и поддержки. Python, aiogram, приём платежей, работа с базами данных.</p>
+          <span class="card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#android" class="card reveal" style="transition-delay:.08s">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3 class="card__title">Android‑приложения</h3>
+          <p class="card__text">От идеи до публикации в RuStore: интерфейс на Jetpack Compose, логика на Kotlin, сборка и подпись релиза.</p>
+          <span class="card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#automation" class="card reveal" style="transition-delay:.16s">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="card__title">Автоматизация</h3>
+          <p class="card__text">Парсеры, скрипты и интеграции между сервисами. Убираю ручную работу там, где её можно убрать.</p>
+          <span class="card__link">Подробнее →</span>
+        </a>
+
+        <a href="services.html#web" class="card reveal" style="transition-delay:.24s">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="card__title">Веб‑разработка</h3>
+          <p class="card__text">Лендинги, страницы приложений, простые админки. Чистый HTML, CSS и JS — без лишнего веса.</p>
+          <span class="card__link">Подробнее →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ИЗБРАННЫЕ ПРОЕКТЫ ==================== -->
+  <section class="section section--soft">
+    <div class="container">
+
+      <div class="section-head section-head--row reveal">
+        <div>
+          <span class="eyebrow">Проекты</span>
+          <h2 class="section-title">Избранное</h2>
+        </div>
+        <a href="apps.html" class="link-arrow">Все приложения →</a>
+      </div>
+
+      <div class="grid grid--3">
+
+        <a href="apps.html#qr-tools" class="app-card reveal">
+          <div class="app-card__head">
+            <div class="app-icon app-icon--qr">
+              <img src="assets/img/apps/qr-tools/0.png" alt="QR Tools">
+            </div>
+            <span class="badge badge--green">В RuStore</span>
+          </div>
+          <h3 class="app-card__title">QR Tools</h3>
+          <p class="app-card__text">Сканер и генератор QR‑кодов и штрихкодов. История, быстрый доступ, тёмная тема.</p>
+          <div class="app-card__foot">
+            <span class="app-card__more">Открыть →</span>
+          </div>
+        </a>
+
+        <a href="apps.html#video-downloader" class="app-card reveal" style="transition-delay:.08s">
+          <div class="app-card__head">
+            <div class="app-icon app-icon--vd">
+              <img src="assets/img/apps/video-downloader/0.png" alt="VideoDownloader">
+            </div>
+            <span class="badge badge--green">В RuStore</span>
+          </div>
+          <h3 class="app-card__title">VideoDownloader</h3>
+          <p class="app-card__text">Скачивание видео из популярных соцсетей. Выбор качества, встроенный плеер, менеджер загрузок.</p>
+          <div class="app-card__foot">
+            <span class="app-card__more">Открыть →</span>
+          </div>
+        </a>
+
+        <button class="app-card app-card--empty reveal js-contact" style="transition-delay:.16s">
+          <div class="app-card__head">
+            <div class="app-icon app-icon--empty">+</div>
+          </div>
+          <h3 class="app-card__title">Здесь может быть ваш проект</h3>
+          <p class="app-card__text">Расскажите идею — соберу приложение, бота или автоматизацию под вашу задачу.</p>
+          <div class="app-card__foot">
+            <span class="app-card__more">Обсудить →</span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== СВЕЖИЕ ОБНОВЛЕНИЯ ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow">Журнал релизов</span>
+        <h2 class="section-title">Свежие обновления приложений</h2>
+        <p class="section-sub">Что нового вышло в моих приложениях.</p>
+      </div>
+
+      <div class="updates">
+
+        <article class="update reveal">
+          <div class="app-icon app-icon--qr app-icon--sm">
+            <img src="assets/img/apps/qr-tools/0.png" alt="">
+          </div>
+          <div class="update__body">
+            <div class="update__top">
+              <h3 class="update__title">QR Tools</h3>
+              <span class="badge badge--version">v 1.0.0</span>
+            </div>
+            <p class="update__text">Релиз в RuStore: сканер QR и штрихкодов, генератор кодов, история сканирований.</p>
+            <time class="update__date">04.10.2026</time>
+          </div>
+        </article>
+
+        <article class="update reveal" style="transition-delay:.08s">
+          <div class="app-icon app-icon--vd app-icon--sm">
+            <img src="assets/img/apps/video-downloader/0.png" alt="">
+          </div>
+          <div class="update__body">
+            <div class="update__top">
+              <h3 class="update__title">VideoDownloader</h3>
+              <span class="badge badge--version">v 1.7.5</span>
+            </div>
+            <p class="update__text">Обновление: скачивание видео из TikTok и Facebook без водяного знака, аудио‑режим, пакетная загрузка.</p>
+            <time class="update__date">30.09.2026</time>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__glow"></div>
+        <h2 class="cta__title">Нужно приложение или бот?</h2>
+        <p class="cta__text">
+          Напишите в Telegram или на почту — обсудим задачу, сроки и стоимость.
+          Отвечаю в течение дня и сразу говорю, реально ли это сделать.
+        </p>
+        <div class="cta__actions">
+          <button class="btn btn--primary js-contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+            Связаться со мной
+          </button>
+          <a href="apps.html" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== ПОДВАЛ ==================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__col">
+      <div class="footer__brand">Денис</div>
+      <p class="footer__desc">Android‑приложения и Telegram‑боты под ключ.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Разделы</h4>
+      <ul class="footer__list">
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="apps.html">Приложения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__list">
+        <li><a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="mailto:denis22142qwe@gmail.com">denis22142qwe@gmail.com</a></li>
+        <li><a href="contacts.html">Форма связи</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© <span id="year">2025</span> Денис. Все права защищены.</span>
+    <span class="footer__made">Сделано вручную на HTML и CSS</span>
+  </div>
+</footer>
+
+<!-- ==================== МОДАЛКА КОНТАКТОВ ==================== -->
+<div class="modal" id="contactModal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <button class="modal__close" data-close aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+
+    <h3 class="modal__title" id="contactModalTitle">Связаться со мной</h3>
+    <p class="modal__text">Выберите удобный способ — отвечу в течение дня.</p>
+
+    <div class="contact-grid">
+
+      <a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--tg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Telegram</div>
+          <div class="contact-item__value">@Lucifer_Denicca_22142</div>
+        </div>
+      </a>
+
+      <a href="mailto:denis22142qwe@gmail.com" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Email</div>
+          <div class="contact-item__value">denis22142qwe@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://vk.ru/lucifer_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--vk">VK</div>
+        <div>
+          <div class="contact-item__name">ВКонтакте</div>
+          <div class="contact-item__value">vk.ru/lucifer_22142</div>
+        </div>
+      </a>
+
+      <a href="viber://chat?number=%2B375295817109" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--viber">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1C6.5 1 2 5.1 2 10.2c0 2.9 1.5 5.5 3.9 7.2v3.3c0 .7.8 1.1 1.4.7l3.4-2.3c.4.1.9.1 1.3.1 5.5 0 10-4.1 10-9.2S17.5 1 12 1zm3.6 12.6c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.2-4-1-2.7-1.2-4.4-4-4.6-4.2-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.3.5-.2.7-.1l2 .9c.3.1.5.2.6.3.1.1.1.5-.1 1.3z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Viber</div>
+          <div class="contact-item__value">+375 29 581‑71‑09</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+<title>Приложения — Денис</title>
+<meta name="description" content="Каталог Android-приложений: QR Tools, VideoDownloader и другие. Скачать APK бесплатно или установить из RuStore. Описание, скриншоты и возможности.">
+<meta name="keywords" content="скачать apk, qr tools, video downloader, приложения rustore, android приложения">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232196F3'/><text x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>Д</text></svg>">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ==================== ШАПКА ==================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Главная</a></li>
+        <li><a class="nav__link" href="services.html">Услуги</a></li>
+        <li><a class="nav__link is-active" href="apps.html">Приложения</a></li>
+        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <button class="btn btn--primary btn--sm nav__cta js-contact">Связаться</button>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero hero--page">
+    <div class="container hero__inner">
+
+      <div class="hero__badge reveal">
+        <span class="dot"></span>
+        2 приложения в RuStore
+      </div>
+
+      <h1 class="hero__title reveal" style="transition-delay:.06s">
+        Мои <span class="text-accent">приложения</span>
+      </h1>
+
+      <p class="hero__subtitle reveal" style="transition-delay:.12s">
+        Каждое приложение — от идеи до релиза: дизайн, код, сборка и публикация в RuStore.
+        Скачивайте APK напрямую или устанавливайте из магазина. Кликните по скриншоту, чтобы увеличить.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ==================== КАТАЛОГ ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="app-showcase">
+
+        <!-- ============ QR TOOLS ============ -->
+        <article class="showcase-item reveal" id="qr-tools">
+
+          <div class="showcase-item__info">
+            <div class="showcase-item__head">
+              <div class="app-icon app-icon--qr">
+                <img src="assets/img/apps/qr-tools/0.png" alt="QR Tools">
+              </div>
+              <span class="badge badge--green">В RuStore</span>
+            </div>
+
+            <h2 class="showcase-item__title">QR Tools</h2>
+
+            <p class="showcase-item__text">
+              Сканер и генератор QR‑кодов и штрихкодов в одном приложении.
+              Быстрое распознавание, история сканирований, тёмная тема
+              и аккуратный интерфейс на Jetpack Compose.
+            </p>
+
+            <ul class="feature-list">
+              <li>Сканирование QR и штрихкодов камерой</li>
+              <li>Генерация кодов из ссылок, текста и контактов</li>
+              <li>История сканирований с поиском</li>
+              <li>Тёмная и светлая темы, поддержка планшетов</li>
+            </ul>
+
+            <div class="showcase-item__actions">
+              <a href="apk/QRTools.apk" class="btn btn--primary btn--sm" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+                Скачать APK
+              </a>
+              <!-- TODO: подставь ссылку на RuStore -->
+              <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+                В RuStore
+              </a>
+            </div>
+          </div>
+
+          <div class="shots" data-shots>
+            <div class="shots__viewport" data-shots-viewport>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/qr-tools/1.png" aria-label="Увеличить скриншот 1">
+                <img src="assets/img/apps/qr-tools/1.png" alt="QR Tools — экран 1">
+              </button>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/qr-tools/2.png" aria-label="Увеличить скриншот 2">
+                <img src="assets/img/apps/qr-tools/2.png" alt="QR Tools — экран 2">
+              </button>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/qr-tools/3.png" aria-label="Увеличить скриншот 3">
+                <img src="assets/img/apps/qr-tools/3.png" alt="QR Tools — экран 3">
+              </button>
+            </div>
+            <div class="shots__nav">
+              <button class="shots__arrow" type="button" data-shots-prev aria-label="Предыдущий скриншот">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <div class="shots__dots" data-shots-dots></div>
+              <button class="shots__arrow" type="button" data-shots-next aria-label="Следующий скриншот">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ============ VIDEO DOWNLOADER ============ -->
+        <article class="showcase-item reveal" id="video-downloader" style="transition-delay:.08s">
+
+          <div class="showcase-item__info">
+            <div class="showcase-item__head">
+              <div class="app-icon app-icon--vd">
+                <img src="assets/img/apps/video-downloader/0.png" alt="VideoDownloader">
+              </div>
+              <span class="badge badge--green">В RuStore</span>
+            </div>
+
+            <h2 class="showcase-item__title">VideoDownloader</h2>
+
+            <p class="showcase-item__text">
+              Сохраняет видео и фото из TikTok и Facebook прямо на устройство — <strong>без водяного знака</strong>,
+              без логотипов и без потери качества. Умеет обходить запрет автора на скачивание,
+              работает с фото‑каруселями и умеет извлекать из видео только звук.
+            </p>
+
+            <ul class="feature-list">
+              <li>Обход запрета автора на скачивание</li>
+              <li>Фото‑карусели TikTok — сохраняются все фото из поста</li>
+              <li>Режим «Только аудио» — mp3 / m4a из любого видео</li>
+              <li>Пакетная загрузка — до 10 ссылок за раз</li>
+              <li>Фоновая загрузка и уведомления с прогрессом</li>
+              <li>Автопаста ссылки из буфера и автоскачивание</li>
+            </ul>
+
+            <div class="showcase-item__actions">
+              <a href="apk/VideoDownloader.apk" class="btn btn--primary btn--sm" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+                Скачать APK
+              </a>
+              <!-- TODO: подставь ссылку на RuStore -->
+              <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+                В RuStore
+              </a>
+            </div>
+          </div>
+
+          <div class="shots" data-shots>
+            <div class="shots__viewport" data-shots-viewport>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/video-downloader/1.png" aria-label="Увеличить скриншот 1">
+                <img src="assets/img/apps/video-downloader/1.png" alt="VideoDownloader — экран 1">
+              </button>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/video-downloader/2.png" aria-label="Увеличить скриншот 2">
+                <img src="assets/img/apps/video-downloader/2.png" alt="VideoDownloader — экран 2">
+              </button>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/video-downloader/3.png" aria-label="Увеличить скриншот 3">
+                <img src="assets/img/apps/video-downloader/3.png" alt="VideoDownloader — экран 3">
+              </button>
+              <button class="shot" type="button" data-lightbox="assets/img/apps/video-downloader/4.png" aria-label="Увеличить скриншот 4">
+                <img src="assets/img/apps/video-downloader/4.png" alt="VideoDownloader — экран 4">
+              </button>
+            </div>
+            <div class="shots__nav">
+              <button class="shots__arrow" type="button" data-shots-prev aria-label="Предыдущий скриншот">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <div class="shots__dots" data-shots-dots></div>
+              <button class="shots__arrow" type="button" data-shots-next aria-label="Следующий скриншот">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__glow"></div>
+        <h2 class="cta__title">Хотите своё приложение?</h2>
+        <p class="cta__text">
+          Расскажите идею — соберу приложение от прототипа до публикации в RuStore.
+          Помогу с дизайном, кодом и релизом.
+        </p>
+        <div class="cta__actions">
+          <button class="btn btn--primary js-contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+            Обсудить проект
+          </button>
+          <a href="services.html" class="btn btn--ghost">Услуги и цены</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== ПОДВАЛ ==================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__col">
+      <div class="footer__brand">Денис</div>
+      <p class="footer__desc">Android‑приложения и Telegram‑боты под ключ.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Разделы</h4>
+      <ul class="footer__list">
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="apps.html">Приложения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__list">
+        <li><a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="mailto:denis22142qwe@gmail.com">denis22142qwe@gmail.com</a></li>
+        <li><a href="contacts.html">Форма связи</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© <span id="year">2025</span> Денис. Все права защищены.</span>
+    <span class="footer__made">Сделано вручную на HTML и CSS</span>
+  </div>
+</footer>
+
+<!-- ==================== МОДАЛКА КОНТАКТОВ ==================== -->
+<div class="modal" id="contactModal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <button class="modal__close" data-close aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+
+    <h3 class="modal__title" id="contactModalTitle">Связаться со мной</h3>
+    <p class="modal__text">Выберите удобный способ — отвечу в течение дня.</p>
+
+    <div class="contact-grid">
+
+      <a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--tg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Telegram</div>
+          <div class="contact-item__value">@Lucifer_Denicca_22142</div>
+        </div>
+      </a>
+
+      <a href="mailto:denis22142qwe@gmail.com" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Email</div>
+          <div class="contact-item__value">denis22142qwe@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://vk.ru/lucifer_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--vk">VK</div>
+        <div>
+          <div class="contact-item__name">ВКонтакте</div>
+          <div class="contact-item__value">vk.ru/lucifer_22142</div>
+        </div>
+      </a>
+
+      <a href="viber://chat?number=%2B375295817109" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--viber">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1C6.5 1 2 5.1 2 10.2c0 2.9 1.5 5.5 3.9 7.2v3.3c0 .7.8 1.1 1.4.7l3.4-2.3c.4.1.9.1 1.3.1 5.5 0 10-4.1 10-9.2S17.5 1 12 1zm3.6 12.6c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.2-4-1-2.7-1.2-4.4-4-4.6-4.2-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.3.5-.2.7-.1l2 .9c.3.1.5.2.6.3.1.1.1.5-.1 1.3z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Viber</div>
+          <div class="contact-item__value">+375 29 581‑71‑09</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ЛАЙТБОКС ==================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр скриншота">
+  <button class="lightbox__close" type="button" data-lightbox-close aria-label="Закрыть">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <img class="lightbox__img" src="" alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+<title>Услуги — Денис</title>
+<meta name="description" content="Разработка Telegram-ботов, Android-приложений, автоматизация и веб-разработка. Прозрачные сроки, работа по этапам, публикация в RuStore.">
+<meta name="keywords" content="заказать telegram бота, разработка приложений на заказ, автоматизация, парсеры, лендинг">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232196F3'/><text x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>Д</text></svg>">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ==================== ШАПКА ==================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Главная</a></li>
+        <li><a class="nav__link is-active" href="services.html">Услуги</a></li>
+        <li><a class="nav__link" href="apps.html">Приложения</a></li>
+        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <button class="btn btn--primary btn--sm nav__cta js-contact">Связаться</button>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero hero--page">
+    <div class="container hero__inner">
+
+      <h1 class="hero__title reveal">
+        <span class="text-accent">Услуги</span>
+      </h1>
+
+      <p class="hero__subtitle reveal" style="transition-delay:.06s">
+        Беру проекты от идеи до релиза — приложения, ботов, автоматизацию и сайты.
+        Ниже — чем занимаюсь, как работаю и от чего зависит цена.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ==================== УСЛУГИ ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="service-list">
+
+        <!-- ============ TELEGRAM-БОТЫ ============ -->
+        <article class="service-block reveal" id="bots">
+
+          <div class="service-block__info">
+            <div class="service-block__head">
+              <div class="service-block__num">01</div>
+            </div>
+
+            <h2 class="service-block__title">Telegram‑боты</h2>
+
+            <p class="service-block__text">
+              Боты для магазинов, подписок, поддержки и уведомлений.
+              Пишу на Python и aiogram, работаю с базой данных, подключаю оплату и интеграции.
+            </p>
+
+            <ul class="check-list">
+              <li>Сценарии под ваш бизнес — от простого меню до воронки продаж</li>
+              <li>Приём платежей и оформление подписок</li>
+              <li>Админ‑панель для управления контентом</li>
+              <li>Интеграции с Google Sheets, CRM и почтой</li>
+              <li>Запуск на хостинге и объяснение, как всё работает</li>
+            </ul>
+
+            <div class="service-meta">
+              <div>
+                <div class="service-meta__label">Зависит от</div>
+                <div class="service-meta__value">Сценариев, базы данных, оплаты, интеграций</div>
+              </div>
+              <div>
+                <div class="service-meta__label">Сроки</div>
+                <div class="service-meta__value">от 3 до 14 дней</div>
+              </div>
+            </div>
+
+            <div class="showcase-item__actions">
+              <button class="btn btn--primary btn--sm js-contact">Обсудить задачу</button>
+            </div>
+          </div>
+
+          <div class="service-block__visual">
+            <div class="mock-chat">
+              <div class="mock-bubble mock-bubble--in">Привет! Нужен бот для магазина</div>
+              <div class="mock-bubble mock-bubble--out">Отлично! Что должен уметь?</div>
+              <div class="mock-bubble mock-bubble--in">Каталог, оплата и доставка</div>
+              <div class="mock-bubble mock-bubble--out">Соберу за 7 дней ✅</div>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ============ ANDROID-ПРИЛОЖЕНИЯ ============ -->
+        <article class="service-block reveal" id="android" style="transition-delay:.08s">
+
+          <div class="service-block__info">
+            <div class="service-block__head">
+              <div class="service-block__num">02</div>
+            </div>
+
+            <h2 class="service-block__title">Android‑приложения</h2>
+
+            <p class="service-block__text">
+              Пишу нативные приложения на Kotlin и Jetpack Compose. От прототипа
+              до подписанного релиза в RuStore — с дизайном, иконкой и публикацией.
+            </p>
+
+            <ul class="check-list">
+              <li>Дизайн экранов и иконка приложения</li>
+              <li>Логика на Kotlin, интерфейс на Jetpack Compose</li>
+              <li>Работа с сетью, локальной базой, файлами</li>
+              <li>Подпись APK и публикация в RuStore</li>
+              <li>Помощь с обновлениями после релиза</li>
+            </ul>
+
+            <div class="service-meta">
+              <div>
+                <div class="service-meta__label">Зависит от</div>
+                <div class="service-meta__value">Экранов, сложности логики, работы с API</div>
+              </div>
+              <div>
+                <div class="service-meta__label">Сроки</div>
+                <div class="service-meta__value">от 1 до 6 недель</div>
+              </div>
+            </div>
+
+            <div class="showcase-item__actions">
+              <button class="btn btn--primary btn--sm js-contact">Обсудить задачу</button>
+            </div>
+          </div>
+
+          <div class="service-block__visual">
+            <div class="mock-phone">
+              <div class="mock-phone__bar mock-phone__bar--short"></div>
+              <div class="mock-phone__tile"></div>
+              <div class="mock-phone__bar"></div>
+              <div class="mock-phone__bar mock-phone__bar--short"></div>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ============ АВТОМАТИЗАЦИЯ ============ -->
+        <article class="service-block reveal" id="automation" style="transition-delay:.16s">
+
+          <div class="service-block__info">
+            <div class="service-block__head">
+              <div class="service-block__num">03</div>
+            </div>
+
+            <h2 class="service-block__title">Автоматизация</h2>
+
+            <p class="service-block__text">
+              Парсеры, скрипты и интеграции. Забираю рутину, которая съедает часы,
+              и превращаю её в одну кнопку или отчёт по расписанию.
+            </p>
+
+            <ul class="check-list">
+              <li>Парсинг сайтов и маркетплейсов</li>
+              <li>Обход блокировок и защит от ботов</li>
+              <li>Расписание и автозапуск по событию</li>
+              <li>Отчёты в Telegram или на почту</li>
+              <li>Логирование и обработка ошибок</li>
+            </ul>
+
+            <div class="service-meta">
+              <div>
+                <div class="service-meta__label">Зависит от</div>
+                <div class="service-meta__value">Источников, защиты, частоты запуска</div>
+              </div>
+              <div>
+                <div class="service-meta__label">Сроки</div>
+                <div class="service-meta__value">от 1 дня до недели</div>
+              </div>
+            </div>
+
+            <div class="showcase-item__actions">
+              <button class="btn btn--primary btn--sm js-contact">Обсудить задачу</button>
+            </div>
+          </div>
+
+          <div class="service-block__visual">
+            <svg class="mock-graph" viewBox="0 0 240 180" fill="none" aria-hidden="true">
+              <line x1="40" y1="40" x2="120" y2="90" stroke="#2196F3" stroke-opacity=".4" stroke-width="1.5"/>
+              <line x1="200" y1="40" x2="120" y2="90" stroke="#2196F3" stroke-opacity=".4" stroke-width="1.5"/>
+              <line x1="120" y1="90" x2="60" y2="150" stroke="#00C853" stroke-opacity=".4" stroke-width="1.5"/>
+              <line x1="120" y1="90" x2="180" y2="150" stroke="#00C853" stroke-opacity=".4" stroke-width="1.5"/>
+              <circle cx="40" cy="40" r="10" fill="#1A1A1A" stroke="#2196F3" stroke-opacity=".6"/>
+              <circle cx="200" cy="40" r="10" fill="#1A1A1A" stroke="#2196F3" stroke-opacity=".6"/>
+              <circle cx="120" cy="90" r="14" fill="#141414" stroke="#2196F3"/>
+              <circle cx="60" cy="150" r="10" fill="#1A1A1A" stroke="#00C853" stroke-opacity=".6"/>
+              <circle cx="180" cy="150" r="10" fill="#1A1A1A" stroke="#00C853" stroke-opacity=".6"/>
+            </svg>
+          </div>
+
+        </article>
+
+        <!-- ============ ВЕБ-РАЗРАБОТКА ============ -->
+        <article class="service-block reveal" id="web" style="transition-delay:.24s">
+
+          <div class="service-block__info">
+            <div class="service-block__head">
+              <div class="service-block__num">04</div>
+            </div>
+
+            <h2 class="service-block__title">Веб‑разработка</h2>
+
+            <p class="service-block__text">
+              Лендинги, страницы приложений и простые админки. Чистый HTML, CSS
+              и JavaScript — без тяжёлых конструкторов и лишнего веса.
+            </p>
+
+            <ul class="check-list">
+              <li>Адаптив под мобильные и планшеты</li>
+              <li>Плавные анимации и аккуратная типографика</li>
+              <li>Формы, интеграции с Telegram и почтой</li>
+              <li>Хостинг на GitHub Pages или своём сервере</li>
+              <li>Поддержка и правки после сдачи</li>
+            </ul>
+
+            <div class="service-meta">
+              <div>
+                <div class="service-meta__label">Зависит от</div>
+                <div class="service-meta__value">Страниц, форм, интеграций, уникальности дизайна</div>
+              </div>
+              <div>
+                <div class="service-meta__label">Сроки</div>
+                <div class="service-meta__value">от 2 дней</div>
+              </div>
+            </div>
+
+            <div class="showcase-item__actions">
+              <button class="btn btn--primary btn--sm js-contact">Обсудить задачу</button>
+            </div>
+          </div>
+
+          <div class="service-block__visual">
+            <div class="mock-web">
+              <div class="mock-web__chrome">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-web__body">
+                <div class="mock-web__line"></div>
+                <div class="mock-web__line mock-web__line--short"></div>
+                <div class="mock-web__btn"></div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== КАК Я РАБОТАЮ ==================== -->
+  <section class="section section--soft">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow">Процесс</span>
+        <h2 class="section-title">Как я работаю</h2>
+        <p class="section-sub">Четыре шага от «здравствуйте» до готового проекта.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline__step reveal">
+          <div class="timeline__num">1</div>
+          <h3 class="timeline__title">Заявка</h3>
+          <p class="timeline__text">Пишете в Telegram или на почту. Рассказываете задачу в двух‑трёх предложениях.</p>
+        </div>
+
+        <div class="timeline__step reveal" style="transition-delay:.08s">
+          <div class="timeline__num">2</div>
+          <h3 class="timeline__title">Обсуждение</h3>
+          <p class="timeline__text">Уточняю детали, предлагаю варианты, называю сроки и цену. Фиксируем договорённости.</p>
+        </div>
+
+        <div class="timeline__step reveal" style="transition-delay:.16s">
+          <div class="timeline__num">3</div>
+          <h3 class="timeline__title">Разработка</h3>
+          <p class="timeline__text">Работаю по этапам, показываю промежуточный результат. Правки можно вносить по ходу.</p>
+        </div>
+
+        <div class="timeline__step reveal" style="transition-delay:.24s">
+          <div class="timeline__num">4</div>
+          <h3 class="timeline__title">Релиз</h3>
+          <p class="timeline__text">Отдаю готовый проект, помогаю с публикацией и объясняю, как всё устроено.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ЧТО ВХОДИТ В РАБОТУ ==================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow">Состав работы</span>
+        <h2 class="section-title">Что входит в работу</h2>
+        <p class="section-sub">Всё это — часть проекта. Отдельно за это доплачивать не нужно.</p>
+      </div>
+
+      <div class="include-grid">
+
+        <article class="include-item reveal">
+          <div class="include-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+          </div>
+          <h3 class="include-item__title">Техзадание</h3>
+          <p class="include-item__text">Разбираю задачу, предлагаю решение, фиксирую список функций.</p>
+        </article>
+
+        <article class="include-item reveal" style="transition-delay:.08s">
+          <div class="include-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.8-.1 2.6-.4"/><path d="M14.5 21.5c1.1-.5 2-1.5 2.2-2.7.2-1.1-.6-1.9-1.7-2.1l-2.3-.4c-1.1-.2-2-1.2-1.7-2.4.2-1.2 1.5-1.8 2.6-1.5l2.2.6c1.3.4 2.7-.3 3.1-1.6.3-1.1-.3-2.3-1.4-2.7l-1.6-.6"/></svg>
+          </div>
+          <h3 class="include-item__title">Дизайн</h3>
+          <p class="include-item__text">Продумываю интерфейс и логику экранов — понятно без инструкции.</p>
+        </article>
+
+        <article class="include-item reveal" style="transition-delay:.16s">
+          <div class="include-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="include-item__title">Разработка</h3>
+          <p class="include-item__text">Пишу код, тестирую на реальных устройствах, исправляю ошибки.</p>
+        </article>
+
+        <article class="include-item reveal" style="transition-delay:.24s">
+          <div class="include-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </div>
+          <h3 class="include-item__title">Запуск</h3>
+          <p class="include-item__text">Публикую в RuStore или разворачиваю на хостинге, передаю доступы.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section section--soft">
+    <div class="container">
+
+      <div class="section-head reveal">
+        <span class="eyebrow">Вопросы</span>
+        <h2 class="section-title">Честные ответы</h2>
+        <p class="section-sub">То, что обычно спрашивают до начала работы.</p>
+      </div>
+
+      <div class="faq">
+
+        <details class="faq__item reveal">
+          <summary class="faq__q">Сколько это стоит?</summary>
+          <div class="faq__answer">
+            Зависит от задачи. Простой бот — одна цифра, приложение с интеграциями — другая.
+            Назову точную цену после короткого обсуждения, без «сюрпризов» в процессе.
+          </div>
+        </details>
+
+        <details class="faq__item reveal" style="transition-delay:.06s">
+          <summary class="faq__q">Сколько по срокам?</summary>
+          <div class="faq__answer">
+            Бот — от 3 дней. Приложение — от недели. Лендинг — от 2 дней.
+            Точные сроки скажу после обсуждения задачи, чтобы не обещать того,
+            что не смогу сделать.
+          </div>
+        </details>
+
+        <details class="faq__item reveal" style="transition-delay:.12s">
+          <summary class="faq__q">Что если результат не понравится?</summary>
+          <div class="faq__answer">
+            Показываю промежуточный результат на каждом этапе. Если что‑то не так —
+            правим сразу, не дожидаясь конца. Так и вам спокойнее, и мне.
+          </div>
+        </details>
+
+        <details class="faq__item reveal" style="transition-delay:.18s">
+          <summary class="faq__q">Работаешь по договору?</summary>
+          <div class="faq__answer">
+            Да. Обговариваем объём, сроки и оплату, фиксируем в переписке или документе.
+            Стандартно — 50% предоплата, остаток после сдачи.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__glow"></div>
+        <h2 class="cta__title">Не нашли свою задачу?</h2>
+        <p class="cta__text">
+          Опишите, что нужно — предложу вариант решения и назову цену.
+          Отвечу в течение дня, без «выгодных предложений» и спама.
+        </p>
+        <div class="cta__actions">
+          <button class="btn btn--primary js-contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+            Обсудить проект
+          </button>
+          <a href="apps.html" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== ПОДВАЛ ==================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__col">
+      <div class="footer__brand">Денис</div>
+      <p class="footer__desc">Android‑приложения и Telegram‑боты под ключ.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Разделы</h4>
+      <ul class="footer__list">
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="apps.html">Приложения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__list">
+        <li><a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="mailto:denis22142qwe@gmail.com">denis22142qwe@gmail.com</a></li>
+        <li><a href="contacts.html">Форма связи</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© <span id="year">2025</span> Денис. Все права защищены.</span>
+    <span class="footer__made">Сделано вручную на HTML и CSS</span>
+  </div>
+</footer>
+
+<!-- ==================== МОДАЛКА КОНТАКТОВ ==================== -->
+<div class="modal" id="contactModal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <button class="modal__close" data-close aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+
+    <h3 class="modal__title" id="contactModalTitle">Связаться со мной</h3>
+    <p class="modal__text">Выберите удобный способ — отвечу в течение дня.</p>
+
+    <div class="contact-grid">
+
+      <a href="https://t.me/Lucifer_Denicca_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--tg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Telegram</div>
+          <div class="contact-item__value">@Lucifer_Denicca_22142</div>
+        </div>
+      </a>
+
+      <a href="mailto:denis22142qwe@gmail.com" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Email</div>
+          <div class="contact-item__value">denis22142qwe@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://vk.ru/lucifer_22142" target="_blank" rel="noopener" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--vk">VK</div>
+        <div>
+          <div class="contact-item__name">ВКонтакте</div>
+          <div class="contact-item__value">vk.ru/lucifer_22142</div>
+        </div>
+      </a>
+
+      <a href="viber://chat?number=%2B375295817109" class="contact-item">
+        <div class="contact-item__icon contact-item__icon--viber">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1C6.5 1 2 5.1 2 10.2c0 2.9 1.5 5.5 3.9 7.2v3.3c0 .7.8 1.1 1.4.7l3.4-2.3c.4.1.9.1 1.3.1 5.5 0 10-4.1 10-9.2S17.5 1 12 1zm3.6 12.6c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.2-4-1-2.7-1.2-4.4-4-4.6-4.2-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.3.5-.2.7-.1l2 .9c.3.1.5.2.6.3.1.1.1.5-.1 1.3z"/></svg>
+        </div>
+        <div>
+          <div class="contact-item__name">Viber</div>
+          <div class="contact-item__value">+375 29 581‑71‑09</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

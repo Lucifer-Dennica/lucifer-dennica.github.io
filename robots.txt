@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lucifer-dennica.github.io/lucifer_dennica.github.io/sitemap.xml
