@@ -248,48 +248,156 @@
 })();
 
 /* ============================================================
-   Лайтбокс — увеличение скриншота
+   Лайтбокс — увеличение скриншота + навигация
    ============================================================ */
 (function () {
   var lb = document.getElementById('lightbox');
   if (!lb) return;
 
   var img = lb.querySelector('.lightbox__img');
+  var prevBtn = lb.querySelector('[data-lightbox-prev]');
+  var nextBtn = lb.querySelector('[data-lightbox-next]');
+  var counter = lb.querySelector('[data-lightbox-counter]');
 
-  function open(src, alt) {
+  // Текущее состояние галереи
+  var gallery = [];   // массив { src, alt }
+  var index = 0;
+
+  function render() {
+    if (!gallery.length) return;
+    var item = gallery[index];
+    img.src = item.src;
+    img.alt = item.alt || '';
+
+    if (counter) {
+      counter.textContent = (index + 1) + ' / ' + gallery.length;
+    }
+
+    if (prevBtn) prevBtn.disabled = index === 0;
+    if (nextBtn) nextBtn.disabled = index === gallery.length - 1;
+  }
+
+  function open(src, alt, items, startIndex) {
     if (!src) return;
-    img.src = src;
-    img.alt = alt || '';
+    gallery = items || [{ src: src, alt: alt || '' }];
+    index = Math.max(0, Math.min(startIndex || 0, gallery.length - 1));
+
     lb.classList.add('is-open');
     lb.setAttribute('aria-hidden', 'false');
     document.body.classList.add('nav-open');
+
+    render();
   }
 
   function close() {
     lb.classList.remove('is-open');
     lb.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('nav-open');
-    // Небольшая задержка, чтобы не «мигало» при закрытии
     setTimeout(function () {
-      if (!lb.classList.contains('is-open')) img.src = '';
+      if (!lb.classList.contains('is-open')) {
+        img.src = '';
+        gallery = [];
+        index = 0;
+      }
     }, 250);
   }
 
+  function prev() {
+    if (index > 0) {
+      index--;
+      render();
+    }
+  }
+
+  function next() {
+    if (index < gallery.length - 1) {
+      index++;
+      render();
+    }
+  }
+
+  // Клик по скриншоту — открыть лайтбокс в контексте его галереи
   document.addEventListener('click', function (e) {
     var shot = e.target.closest('[data-lightbox]');
     if (shot) {
       e.preventDefault();
-      var innerImg = shot.querySelector('img');
-      open(shot.getAttribute('data-lightbox'), innerImg ? innerImg.alt : '');
+
+      // Ищем ближайшую галерею [data-shots] и собираем все её скриншоты
+      var galleryRoot = shot.closest('[data-shots]');
+      var items = [];
+      var startIndex = 0;
+
+      if (galleryRoot) {
+        var allShots = galleryRoot.querySelectorAll('[data-lightbox]');
+        allShots.forEach(function (el, i) {
+          var innerImg = el.querySelector('img');
+          items.push({
+            src: el.getAttribute('data-lightbox'),
+            alt: innerImg ? innerImg.alt : ''
+          });
+          if (el === shot) startIndex = i;
+        });
+      }
+
+      // Fallback — если галереи нет, открываем одиночный скриншот
+      if (!items.length) {
+        var innerImg = shot.querySelector('img');
+        items = [{ src: shot.getAttribute('data-lightbox'), alt: innerImg ? innerImg.alt : '' }];
+      }
+
+      open(shot.getAttribute('data-lightbox'), '', items, startIndex);
       return;
     }
 
     if (e.target.closest('[data-lightbox-close]') || e.target === lb) {
       close();
+      return;
+    }
+
+    if (e.target.closest('[data-lightbox-prev]')) {
+      prev();
+      return;
+    }
+
+    if (e.target.closest('[data-lightbox-next]')) {
+      next();
     }
   });
 
+  // Клавиатура
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && lb.classList.contains('is-open')) close();
+    if (!lb.classList.contains('is-open')) return;
+
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
   });
+
+  // Свайпы на мобильных
+  var startX = 0;
+  var startY = 0;
+  var swiping = false;
+
+  lb.addEventListener('touchstart', function (e) {
+    if (!lb.classList.contains('is-open')) return;
+    var t = e.changedTouches[0];
+    startX = t.clientX;
+    startY = t.clientY;
+    swiping = true;
+  }, { passive: true });
+
+  lb.addEventListener('touchend', function (e) {
+    if (!swiping) return;
+    swiping = false;
+
+    var t = e.changedTouches[0];
+    var dx = t.clientX - startX;
+    var dy = t.clientY - startY;
+
+    // Горизонтальный свайп длиннее 50px и больше вертикального отклонения
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0) next();
+      else prev();
+    }
+  }, { passive: true });
 })();
