@@ -1550,3 +1550,63 @@ button{font:inherit;background:none;border:none;color:inherit;cursor:pointer}
 .showcase-item{
   scroll-margin-top: 88px;
 }
+
+/* ============================================================
+   ЛАЙТБОКС — навигация между скриншотами
+   ============================================================ */
+.lightbox__arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:52px;height:52px;
+  border-radius:14px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.12);
+  cursor:pointer;
+  z-index:2;
+  transition:background .2s var(--ease),transform .2s var(--ease),opacity .2s var(--ease);
+}
+.lightbox__arrow svg{width:22px;height:22px}
+.lightbox__arrow:hover{
+  background:rgba(255,255,255,.18);
+}
+.lightbox__arrow:active{
+  transform:translateY(-50%) scale(.94);
+}
+.lightbox__arrow--prev{left:24px}
+.lightbox__arrow--next{right:24px}
+
+.lightbox__arrow[disabled]{
+  opacity:.25;
+  cursor:default;
+  pointer-events:none;
+}
+
+.lightbox__counter{
+  position:absolute;
+  left:50%;
+  bottom:24px;
+  transform:translateX(-50%);
+  padding:6px 14px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:600;
+  color:#B5B5B5;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  letter-spacing:.02em;
+  z-index:2;
+  pointer-events:none;
+}
+
+@media (max-width:560px){
+  .lightbox__arrow{
+    width:44px;height:44px;
+    border-radius:12px;
+  }
+  .lightbox__arrow--prev{left:10px}
+  .lightbox__arrow--next{right:10px}
+  .lightbox__counter{bottom:14px}
+}
